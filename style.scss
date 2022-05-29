@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 // Colors
 $Very_Dark_Blue: #070439;
@@ -9,7 +9,102 @@ $Moderate_Cyan: #3c9f8f;
 $Light_Grayish_Blue: #f6f6fe;
 $Light_Gray: #bfbfbf;
 
-
 // Typography
-$body_font: 'Open Sans', sans-serif;
-$headin_font: 'Raleway', sans-serif;
+$body_font: "Open Sans", sans-serif;
+$headin_font: "Raleway", sans-serif;
+
+// Mixins
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin input {
+  width: 95%;
+  padding: 0.6rem;
+  border-radius: 0.3rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body_font;
+  font-size: 1rem;
+}
+
+main {
+  padding: 2rem;
+  @include flex();
+  flex-direction: column;
+//   gap: 7rem;
+}
+
+nav {
+  @include flex();
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+
+  img {
+    width: 25%;
+  }
+  ul {
+    list-style: none;
+    @include flex();
+    gap: 1em;
+    font-size: small;
+    font-weight: 600;
+    color: $Desaturated_Blue;
+  }
+}
+
+article {
+    
+  text-align: center;
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-family: $headin_font;
+    margin-bottom: 1.5rem;
+  }
+  p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.email-input {
+  @include flex();
+  flex-direction: column;
+  gap: 1rem;
+
+  input {
+    @include input();
+    border: 1px $Desaturated_Blue solid;
+    color: $Light_Gray;
+    &::placeholder {
+      color: $Light_Gray;
+    }
+  }
+  button {
+    @include input();
+    border: none;
+    background-color: $Bright_Blue;
+    color: $Light_Grayish_Blue;
+    font-weight: 800;
+  }
+}
+
+section{
+
+
+    height: 100vh;
+    background: url("../images/bg-curve-mobile.svg") no-repeat fixed 100%;
+    background-size: cover;
+}
