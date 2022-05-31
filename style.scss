@@ -32,9 +32,28 @@ $headin_font: "Raleway", sans-serif;
 }
 
 body {
+  min-width: 375px;
   font-family: $body_font;
   font-size: 1rem;
 }
+
+// FIIIIRST
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 main {
   padding: 2rem;
@@ -47,6 +66,7 @@ nav {
   @include flex();
   justify-content: space-between;
   align-items: flex-start;
+  gap: 5rem;
   margin-bottom: 5rem;
 
   img {
@@ -70,7 +90,6 @@ article {
   }
   h2 {
     font-family: $headin_font;
-    margin-bottom: 1.5rem;
   }
   p {
     font-size: 0.9rem;
@@ -87,7 +106,7 @@ article {
   input {
     @include input();
     border: 1px $Desaturated_Blue solid;
-    color: $Light_Gray;
+    color: $Very_Dark_Blue;
     &::placeholder {
       color: $Light_Gray;
     }
@@ -106,17 +125,40 @@ article {
     }
   }
 }
+
+// SECONDDD
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 .svg {
   position: relative;
-  top: -6rem;
+  top: -0rem;
   width: 100%;
   height: 100px;
   background: url("../images/bg-curve-mobile.svg") no-repeat scroll top;
   background-size: cover;
 }
+
 section {
-  padding-bottom: 4rem;
   background-color: $Light_Grayish_Blue;
+}
+section,
+aside {
+  padding-bottom: 4rem;
   @include flex();
   flex-direction: column;
   gap: 3rem;
@@ -129,10 +171,10 @@ section {
 .info {
   text-align: center;
   font-family: $headin_font;
-  padding: 0 2rem;
+  padding: 3rem 2rem;
   h2 {
     font-size: 1.1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   p {
     text-align: left;
@@ -144,11 +186,11 @@ section {
 }
 
 .callToAction {
-  border-bottom: solid $Moderate_Cyan 1px;
   @include flex();
   gap: 0.5rem;
+  padding: 0 2rem;
+
   a {
-    width: 100%;
     color: $Moderate_Cyan;
     text-decoration: none;
   }
@@ -209,18 +251,35 @@ section {
 
   h2 {
     font-family: $headin_font;
-    font-weight: 500;
   }
   p {
     color: #cecece;
     line-height: 1.3rem;
   }
   .email-input {
-    width: 90%;
+    min-width: 90%;
     gap: 0.5rem;
     margin-bottom: 0;
   }
 }
+
+// Three
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 footer {
   background-color: $Very_Dark_Blue;
@@ -243,6 +302,7 @@ footer {
   @include flex();
   gap: 1rem;
 }
+
 .menu {
   margin: 3rem 0;
   list-style: none;
@@ -250,10 +310,11 @@ footer {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 
   li:hover {
     color: #3065f8;
+    cursor: pointer;
   }
 }
 
@@ -272,6 +333,136 @@ footer {
     &:hover {
       color: $Bright_Blue;
       border-color: $Bright_Blue;
+      cursor: pointer;
     }
+  }
+}
+
+@media (min-width: 700px) {
+  main {
+    margin-bottom: 8rem;
+  }
+  nav {
+    width: 90%;
+    align-items: center;
+    img {
+      width: 12%;
+    }
+    ul {
+      gap: 3rem;
+    }
+  }
+  article {
+    @include flex();
+    flex-direction: row-reverse;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+    .info {
+      text-align: left;
+      width: 45%;
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: medium;
+      }
+    }
+    .email-input {
+      width: 90%;
+      flex-direction: row;
+      margin-bottom: 0;
+      button {
+        width: 50%;
+        padding: 0.9rem;
+      }
+    }
+  }
+  .svg {
+    background: url("../images/bg-curve-desktop.svg") no-repeat scroll top;
+    background-size: cover;
+  }
+
+  section {
+    @include flex();
+    flex-direction: row-reverse;
+    padding: 4rem 2rem;
+
+    .illustration2 {
+      width: 40%;
+    }
+  }
+
+  aside {
+    width: 90%;
+  }
+  .info {
+    text-align: left;
+    h2 {
+      font-size: 2.5rem;
+    }
+    p {
+      width: 70%;
+    }
+  }
+  .callToAction {
+    align-self: flex-start;
+  }
+  .comment {
+    align-self: flex-start;
+    width: 45%;
+  }
+
+  .signUp {
+    @include flex();
+    flex-direction: row;
+    .info {
+      width: 100%;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    p {
+      width: 60%;
+    }
+
+    .email-input {
+      min-width: 35%;
+
+      input {
+        align-self: flex-start;
+      }
+      button {
+        align-self: flex-start;
+        width: 40%;
+      }
+    }
+  }
+
+  footer {
+    @include flex();
+    justify-content: space-between;
+    padding: 5rem 15rem 0 5rem;
+    height: 70vh;
+  }
+  .contact{
+    position: relative;
+    bottom: 5rem;
+  }
+  .about{
+    @include flex();
+    justify-content: space-between;
+    width: 60%;    
+  }
+  .menu {
+    @include flex();
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10rem;
+    margin:0;
+  }
+  .socials{
+    align-self: flex-start;
   }
 }
