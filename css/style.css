@@ -8,6 +8,7 @@
 }
 
 body {
+  min-width: 375px;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
@@ -45,6 +46,7 @@ nav {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 5rem;
   margin-bottom: 5rem;
 }
 
@@ -80,7 +82,6 @@ article img {
 
 article h2 {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 1.5rem;
 }
 
 article p {
@@ -111,7 +112,7 @@ article p {
   padding: 0.7rem;
   border-radius: 0.2rem;
   border: 1px #585989 solid;
-  color: #bfbfbf;
+  color: #070439;
 }
 
 .email-input input::-webkit-input-placeholder {
@@ -148,7 +149,7 @@ article p {
 
 .svg {
   position: relative;
-  top: -6rem;
+  top: -0rem;
   width: 100%;
   height: 100px;
   background: url("../images/bg-curve-mobile.svg") no-repeat scroll top;
@@ -156,8 +157,12 @@ article p {
 }
 
 section {
-  padding-bottom: 4rem;
   background-color: #f6f6fe;
+}
+
+section,
+aside {
+  padding-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,19 +179,20 @@ section {
   gap: 3rem;
 }
 
-section .illustration2 {
+section .illustration2,
+aside .illustration2 {
   width: 90%;
 }
 
 .info {
   text-align: center;
   font-family: "Raleway", sans-serif;
-  padding: 0 2rem;
+  padding: 3rem 2rem;
 }
 
 .info h2 {
   font-size: 1.1rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .info p {
@@ -209,7 +215,6 @@ section .illustration2 {
 }
 
 .callToAction {
-  border-bottom: solid #3c9f8f 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,10 +225,10 @@ section .illustration2 {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  padding: 0 2rem;
 }
 
 .callToAction a {
-  width: 100%;
   color: #3c9f8f;
   text-decoration: none;
 }
@@ -337,7 +342,6 @@ section .illustration2 {
 
 .signUp h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
 }
 
 .signUp p {
@@ -346,7 +350,7 @@ section .illustration2 {
 }
 
 .signUp .email-input {
-  width: 90%;
+  min-width: 90%;
   gap: 0.5rem;
   margin-bottom: 0;
 }
@@ -415,11 +419,12 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 2rem;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 .menu li:hover {
   color: #3065f8;
+  cursor: pointer;
 }
 
 .icons {
@@ -455,5 +460,204 @@ footer {
 .icons i:hover {
   color: #3065f8;
   border-color: #3065f8;
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  main {
+    margin-bottom: 8rem;
+  }
+  nav {
+    width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav img {
+    width: 12%;
+  }
+  nav ul {
+    gap: 3rem;
+  }
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    align-items: center;
+  }
+  article img {
+    width: 50%;
+  }
+  article .info {
+    text-align: left;
+    width: 45%;
+  }
+  article .info h2 {
+    font-size: 2rem;
+  }
+  article .info p {
+    font-size: medium;
+  }
+  article .email-input {
+    width: 90%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
+  article .email-input button {
+    width: 50%;
+    padding: 0.9rem;
+  }
+  .svg {
+    background: url("../images/bg-curve-desktop.svg") no-repeat scroll top;
+    background-size: cover;
+  }
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 4rem 2rem;
+  }
+  section .illustration2 {
+    width: 40%;
+  }
+  aside {
+    width: 90%;
+  }
+  .info {
+    text-align: left;
+  }
+  .info h2 {
+    font-size: 2.5rem;
+  }
+  .info p {
+    width: 70%;
+  }
+  .callToAction {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .comment {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 45%;
+  }
+  .signUp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .signUp .info {
+    width: 100%;
+  }
+  .signUp h2 {
+    font-size: 1.5rem;
+  }
+  .signUp p {
+    width: 60%;
+  }
+  .signUp .email-input {
+    min-width: 35%;
+  }
+  .signUp .email-input input {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .signUp .email-input button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 40%;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 5rem 15rem 0 5rem;
+    height: 70vh;
+  }
+  .contact {
+    position: relative;
+    bottom: 5rem;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60%;
+  }
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10rem;
+    margin: 0;
+  }
+  .socials {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 /*# sourceMappingURL=style.css.map */
