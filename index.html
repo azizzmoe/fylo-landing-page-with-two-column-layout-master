@@ -37,70 +37,82 @@
             them wherever you need, share and collaborate with friends, family,
             and co-workers.
           </p>
-          <div class="email-input">
-            <input type="email" placeholder="Enter your email" />
-            <button>Get Started</button>
-          </div>
+          <form class="email-input">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="input"
+              required
+            />
+            <button type="submit" id="button">Get Started</button>
+          </form>
         </div>
       </article>
     </main>
-
+    <div class="svg"></div>
     <section>
-      <div class="svg"></div>
-
       <img
         class="illustration2"
         src="./images/illustration-2.svg"
         alt=""
         width="100%"
       />
-      <div class="info">
-        <h2>Stay productive, wherever you are</h2>
-        <p>
-          <span
-            >Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs.</span
-          >
-          <span>
-            Securely share files and folders with friends, family and colleagues
-            for live collaboration. No email attachments required!
-          </span>
-        </p>
-      </div>
-
-      <div class="callToAction">
-        <a href="/">See how Fylo works</a>
-        <img src="./images/icon-arrow.svg" alt="arrow-icon" />
-      </div>
-
-      <div class="comment">
-        <img src="./images/icon-quotes.svg" alt="quotes-icon" />
-        <p>
-          Fylo has improved our team productivity by an order of magnitude.
-          Since making the switch our team has become a well-oiled collaboration
-          machine.
-        </p>
-        <div class="profile">
-          <img src="./images/avatar-testimonial.jpg" alt="avatar" />
-          <small
-            >Kyle Burton
-            <span>Founder & CEO, Huddle</span>
-          </small>
+      <aside>
+        <div class="info">
+          <h2>Stay productive, wherever you are</h2>
+          <p>
+            <span
+              >Never let location be an issue when accessing your files. Fylo
+              has you covered for all of your file storage needs.</span
+            >
+            <span>
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </span>
+          </p>
         </div>
-      </div>
+
+        <div class="callToAction">
+          <a href="/">See how Fylo works</a>
+          <img src="./images/icon-arrow.svg" alt="arrow-icon" />
+        </div>
+
+        <div class="comment">
+          <img src="./images/icon-quotes.svg" alt="quotes-icon" />
+          <p>
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="profile">
+            <img src="./images/avatar-testimonial.jpg" alt="avatar" />
+            <small
+              >Kyle Burton
+              <span>Founder & CEO, Huddle</span>
+            </small>
+          </div>
+        </div>
+      </aside>
     </section>
 
     <div class="signUp">
-      <h2>Get early access today</h2>
-      <p>
-        It only takes a minute to sign up and our free starter tier is extremely
-        generous. If you have any questions, our support team would be happy to
-        help you.
-      </p>
-      <div class="email-input">
-        <input type="email" placeholder="email@example.com" />
-        <button>Get Started For Free</button>
+      <div class="info">
+        <h2>Get early access today</h2>
+        <p>
+          It only takes a minute to sign up and our free starter tier is
+          extremely generous. If you have any questions, our support team would
+          be happy to help you.
+        </p>
       </div>
+      <form class="email-input">
+        <input
+          type="email"
+          placeholder="email@example.com"
+          id="input"
+          required
+        />
+        <button type="submit" id="button">Get Started For Free</button>
+      </form>
     </div>
 
     <footer>
@@ -116,25 +128,28 @@
           <span>example@fylo.com</span>
         </div>
       </div>
-      <ul class="menu">
-        <div class="one">
-          <li>About Us</li>
-          <li>Jobs</li>
-          <li>Press</li>
-          <li>Blog</li>
-        </div>
 
-        <div class="two">
-          <li>Contact Us</li>
-          <li>Terms</li>
-          <li>Privacy</li>
-        </div>
-      </ul>
-      <div class="socials">
-        <div class="icons">
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+      <div class="about">
+        <ul class="menu">
+          <div class="one">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+          </div>
+
+          <div class="two">
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+          </div>
+        </ul>
+        <div class="socials">
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
         </div>
       </div>
     </footer>
