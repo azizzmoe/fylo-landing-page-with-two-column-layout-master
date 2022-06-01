@@ -56,7 +56,6 @@ body {
 //
 
 main {
-  padding: 2rem;
   @include flex();
   flex-direction: column;
   //   gap: 7rem;
@@ -68,6 +67,7 @@ nav {
   align-items: flex-start;
   gap: 5rem;
   margin-bottom: 5rem;
+  padding: 2rem;
 
   img {
     width: 25%;
@@ -103,6 +103,13 @@ article {
   flex-direction: column;
   gap: 1rem;
 
+  .container {
+    @include flex();
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
   input {
     @include input();
     border: 1px $Desaturated_Blue solid;
@@ -337,6 +344,27 @@ footer {
     }
   }
 }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 @media (min-width: 700px) {
   main {
@@ -360,20 +388,27 @@ footer {
       width: 50%;
     }
     .info {
-      text-align: left;
       width: 45%;
-      h2 {
-        font-size: 2rem;
-      }
-      p {
-        font-size: medium;
-      }
     }
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: medium;
+    }
+
     .email-input {
+      gap: 0;
       width: 90%;
       flex-direction: row;
       margin-bottom: 0;
+
+      .container{
+        align-items: flex-start;
+      }
+
       button {
+        align-self: flex-start;
         width: 50%;
         padding: 0.9rem;
       }
@@ -446,23 +481,23 @@ footer {
     padding: 5rem 15rem 0 5rem;
     height: 70vh;
   }
-  .contact{
+  .contact {
     position: relative;
     bottom: 5rem;
   }
-  .about{
+  .about {
     @include flex();
     justify-content: space-between;
-    width: 60%;    
+    width: 60%;
   }
   .menu {
     @include flex();
     flex-direction: row;
     align-items: flex-start;
     gap: 10rem;
-    margin:0;
+    margin: 0;
   }
-  .socials{
+  .socials {
     align-self: flex-start;
   }
 }
