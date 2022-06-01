@@ -14,7 +14,6 @@ body {
 }
 
 main {
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,6 +47,7 @@ nav {
           align-items: flex-start;
   gap: 5rem;
   margin-bottom: 5rem;
+  padding: 2rem;
 }
 
 nav img {
@@ -105,6 +105,25 @@ article p {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1rem;
+}
+
+.email-input .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 0.4rem;
 }
 
 .email-input input {
@@ -499,16 +518,16 @@ footer {
     width: 50%;
   }
   article .info {
-    text-align: left;
     width: 45%;
   }
-  article .info h2 {
+  article h2 {
     font-size: 2rem;
   }
-  article .info p {
+  article p {
     font-size: medium;
   }
   article .email-input {
+    gap: 0;
     width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -516,7 +535,14 @@ footer {
             flex-direction: row;
     margin-bottom: 0;
   }
+  article .email-input .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
   article .email-input button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     width: 50%;
     padding: 0.9rem;
   }
