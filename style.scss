@@ -72,7 +72,7 @@ nav {
   img {
     width: 25%;
   }
-  .menu {
+  ul {
     list-style: none;
     @include flex();
     gap: 1em;
@@ -319,7 +319,7 @@ footer {
   gap: 2rem;
   line-height: 2.5rem;
 
-  ul {
+  ul{
     list-style: none;
   }
 
@@ -380,7 +380,7 @@ footer {
     img {
       width: 12%;
     }
-    .menu {
+    ul {
       gap: 3rem;
     }
   }
@@ -407,7 +407,7 @@ footer {
       flex-direction: row;
       margin-bottom: 0;
 
-      .container {
+      .container{
         align-items: flex-start;
       }
 
