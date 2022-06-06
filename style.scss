@@ -375,7 +375,7 @@ footer {
     margin-bottom: 8rem;
   }
   nav {
-    width: 90%;
+    width: 95%;
     align-items: center;
     img {
       width: 12%;
@@ -456,15 +456,13 @@ footer {
   .signUp {
     @include flex();
     flex-direction: row;
-    .info {
-      width: 100%;
-    }
+    // width:100%;
+   
     h2 {
       font-size: 1.5rem;
     }
-    p {
-      width: 60%;
-    }
+    
+  
 
     .email-input {
       min-width: 35%;
@@ -483,7 +481,7 @@ footer {
     @include flex();
     justify-content: space-between;
     padding: 5rem 15rem 0 5rem;
-    height: 70vh;
+    height: 50vh;
   }
   .contact {
     position: relative;
