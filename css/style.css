@@ -210,7 +210,7 @@ aside .illustration2 {
 }
 
 .info h2 {
-  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
   padding-bottom: 1rem;
 }
 
@@ -578,6 +578,8 @@ footer {
   }
   .info {
     text-align: left;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   .info h2 {
     font-size: 2.5rem;
@@ -608,6 +610,9 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .signUp h2 {
     font-size: 1.5rem;
