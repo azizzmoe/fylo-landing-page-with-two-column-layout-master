@@ -47,7 +47,7 @@ nav {
           align-items: flex-start;
   gap: 5rem;
   margin-bottom: 5rem;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 nav img {
@@ -73,6 +73,8 @@ nav ul {
 
 article {
   text-align: center;
+  line-height: 1.5;
+  padding: 2rem;
 }
 
 article img {
@@ -82,11 +84,12 @@ article img {
 
 article h2 {
   font-family: "Raleway", sans-serif;
+  padding-bottom: 1rem;
 }
 
 article p {
   font-size: 0.9rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .email-input {
@@ -491,7 +494,9 @@ footer {
     margin-bottom: 8rem;
   }
   nav {
-    width: 95%;
+    padding: 2rem 0;
+    margin: 0;
+    width: 90%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -503,6 +508,7 @@ footer {
     gap: 3rem;
   }
   article {
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -517,12 +523,18 @@ footer {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
   }
   article img {
     width: 50%;
   }
   article .info {
-    width: 45%;
+    text-align: left;
+    line-height: 1.5;
+    width: 44%;
   }
   article h2 {
     font-size: 2rem;
@@ -612,6 +624,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    padding: 5rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
