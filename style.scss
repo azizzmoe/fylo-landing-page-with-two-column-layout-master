@@ -186,8 +186,8 @@ aside {
   flex-direction: column;
   gap: 2rem;
 
-  .illustration2 {
-    width: 90%;
+  .illustration2 img{
+    width: 100%;
   }
 }
 
@@ -454,10 +454,6 @@ footer {
     @include flex();
     flex-direction: row-reverse;
     padding: 4rem 3rem;
-
-    .illustration2 {
-      width: 40%;
-    }
   }
 
   aside {
