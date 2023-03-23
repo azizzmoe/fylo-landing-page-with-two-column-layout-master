@@ -6,6 +6,6 @@
 
 Thanks for checking out my work.
 
-[Here's The Live Site](https://azzizmoe.github.io/fylo-landing-page-with-two-column-layout-master/)
+[Here's The Live Site](https://azizzmoe.github.io/fylo-landing-page-with-two-column-layout-master/)
 
 **Thanks for checking out my work!** 🚀
